@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    padding: 0%;
+  }
+  
+  h3 {
+    color: white;
+    font-size: 12px;
+    padding: 2%;
+  }
+  .git {
+    width: 10px;
+  }
+  .in {
+    width: 10px;
+  }
+  .wp {
+    width: 15px;
+  }
+  .home {
+    color: white;
+    font-size: 22px;
+  }
+  .home_ {
+    color: white;
+    font-size: 22px;
+  }
+  .developing {
+    color: white;
+  }
+  .about {
+    color: white;
+  }
+  
+  .certification {
+    color: white;
+  }
+  
+  .contact {
+    color: white;
+  }
+  
+  p {
+    color: white;
+  }
+  .button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+  }
+  
+  .button__label {
+    font-size: 14px;
+    line-height: 10px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .end {
+    color: white;
+    font-size: 12px;
+  }
+  
