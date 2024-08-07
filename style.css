@@ -1,65 +1,93 @@
 body {
-    background-color: black;
-    padding: 0%;
-  }
-  
-  h3 {
-    color: white;
-    font-size: 12px;
-    padding: 2%;
-  }
-  .git {
-    width: 10px;
-  }
-  .in {
-    width: 10px;
-  }
-  .wp {
-    width: 15px;
-  }
-  .home {
-    color: white;
-    font-size: 22px;
-  }
-  .home_ {
-    color: white;
-    font-size: 22px;
-  }
-  .developing {
-    color: white;
-  }
-  .about {
-    color: white;
-  }
-  
-  .certification {
-    color: white;
-  }
-  
-  .contact {
-    color: white;
-  }
-  
-  p {
-    color: white;
-  }
-  .button {
-    background-color: green;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-  }
-  
-  .button__label {
-    font-size: 14px;
-    line-height: 10px;
-    color: white;
-    font-weight: 700;
-  }
-  
-  .end {
-    color: white;
-    font-size: 12px;
-  }
-  
+  background-color: black;
+  padding: 0%;
+}
+
+h3 {
+  color: white;
+  font-size: 12px;
+  padding: 2%;
+}
+.git {
+  width: 15px;
+  display: inline;
+  right: 370px;
+  position: absolute;
+  top: 20px;
+}
+.in {
+  width: 15px;
+  display: inline;
+  right: 340px;
+  position: absolute;
+  top: 20px;
+}
+.wp {
+  width: 15px;
+  display: inline;
+  right: 310px;
+  position: absolute;
+  top: 20px;
+}
+
+.foto__ {
+  width: 200px;
+  height: 230px;
+  right: 310px;
+  top: 60px;
+  position: absolute;
+}
+.home {
+  color: white;
+  font-size: 46px;
+  right: 610px;
+  position: absolute;
+}
+.home_ {
+  color: white;
+  font-size: 46px;
+  right: 600px;
+  top: 140px;
+  position: absolute;
+}
+.developing_ {
+  color: white;
+  font-size: 42px;
+  top: 300px;
+  right: 760px;
+  position: absolute;
+}
+.about {
+  color: white;
+}
+
+.certification {
+  color: white;
+}
+
+.contact {
+  color: white;
+}
+
+p {
+  color: white;
+}
+.button {
+  background-color: green;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.button__label {
+  font-size: 14px;
+  line-height: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.end {
+  color: white;
+  font-size: 12px;
+}
