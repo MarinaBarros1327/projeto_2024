@@ -11,21 +11,21 @@ h3 {
 .git {
   width: 15px;
   display: inline;
-  right: 370px;
+  right: 50px;
   position: absolute;
   top: 20px;
 }
 .in {
   width: 15px;
   display: inline;
-  right: 340px;
+  right: 80px;
   position: absolute;
   top: 20px;
 }
 .wp {
   width: 15px;
   display: inline;
-  right: 310px;
+  right: 110px;
   position: absolute;
   top: 20px;
 }
@@ -33,13 +33,14 @@ h3 {
 .foto__ {
   width: 200px;
   height: 230px;
-  right: 310px;
+  right: 200px;
   top: 60px;
   position: absolute;
 }
 .home {
   color: white;
   font-size: 46px;
+  top: 90px;
   right: 610px;
   position: absolute;
 }
@@ -50,19 +51,66 @@ h3 {
   top: 140px;
   position: absolute;
 }
+.developing {
+  color: white;
+  font-size: 42px;
+  top: 310px;
+  position: absolute;
+}
 .developing_ {
   color: white;
   font-size: 42px;
-  top: 300px;
-  right: 760px;
+  top: 10px;
+}
+
+.html_ {
+  color: white;
+  font-size: 24px;
+  top: 100px;
+  left: 370px;
+  position: absolute;
+}
+.css_ {
+  color: white;
+  font-size: 24px;
+  top: 100px;
+  left: 480px;
+  position: absolute;
+}
+.java_ {
+  color: white;
+  font-size: 24px;
+  top: 100px;
+  left: 580px;
+  position: absolute;
+}
+.react_ {
+  color: white;
+  font-size: 24px;
+  top: 100px;
+  left: 760px;
   position: absolute;
 }
 .about {
   color: white;
+  font-size: 42px;
+  top: 480px;
+  position: absolute;
+}
+
+.about_ {
+  color: white;
+  font-size: 24px;
+  top: 520px;
+  left: 20px;
+  position: absolute;
 }
 
 .certification {
   color: white;
+  font-size: 42px;
+  top: 320px;
+  position: absolute;
 }
 
 .contact {
@@ -78,6 +126,9 @@ p {
   border: none;
   cursor: pointer;
   padding: 10px 15px;
+  right: 10px;
+  top: 1100px;
+  position: absolute;
 }
 
 .button__label {
