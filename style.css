@@ -1,144 +1,143 @@
+/* Corpo da página */
 body {
   background-color: black;
-  padding: 0%;
-}
-
-h3 {
   color: white;
-  font-size: 12px;
-  padding: 2%;
-}
-.git {
-  width: 15px;
-  display: inline;
-  right: 50px;
-  position: absolute;
-  top: 20px;
-}
-.in {
-  width: 15px;
-  display: inline;
-  right: 80px;
-  position: absolute;
-  top: 20px;
-}
-.wp {
-  width: 15px;
-  display: inline;
-  right: 110px;
-  position: absolute;
-  top: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Imagem de perfil */
 .foto__ {
   width: 200px;
   height: 230px;
-  right: 200px;
-  top: 60px;
-  position: absolute;
-}
-.home {
-  color: white;
-  font-size: 46px;
-  top: 90px;
-  right: 610px;
-  position: absolute;
-}
-.home_ {
-  color: white;
-  font-size: 46px;
-  right: 600px;
-  top: 140px;
-  position: absolute;
-}
-.developing {
-  color: white;
-  font-size: 42px;
-  top: 310px;
-  position: absolute;
-}
-.developing_ {
-  color: white;
-  font-size: 42px;
-  top: 10px;
 }
 
-.html_ {
-  color: white;
-  font-size: 24px;
-  top: 100px;
-  left: 370px;
-  position: absolute;
+/* Seção de ícones de redes sociais */
+.icon {
+  position: absolute; /* Para posicionamento fixo na página */
+  top: 20px; /* Distância do topo da página */
+  right: 20px; /* Distância da borda direita da página */
+  display: flex;
+  justify-content: flex-end; /* Alinha os ícones à direita dentro do container */
+  gap: 10px;
+  padding: 0;
 }
-.css_ {
-  color: white;
-  font-size: 24px;
-  top: 100px;
-  left: 480px;
-  position: absolute;
+
+.icon a img {
+  width: 30px; /* Ajustado para um tamanho mais apropriado */
 }
-.java_ {
-  color: white;
-  font-size: 24px;
-  top: 100px;
-  left: 580px;
-  position: absolute;
+
+/* Seção principal */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.react_ {
-  color: white;
-  font-size: 24px;
-  top: 100px;
-  left: 760px;
-  position: absolute;
+
+/* Seções específicas */
+.home-section {
+  margin: 20px 0;
 }
-.about {
-  color: white;
+
+.home, .home_ {
+  font-size: 46px;
+}
+
+ .about, .certification, .contact {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.developing {
+ 
+  margin: 40px 0;
+  font-size: 24px;
+}
+
+.developing_ {
   font-size: 42px;
-  top: 480px;
-  position: absolute;
+  
+
+}
+
+.html_, .css_, .java_, .react_ , .sql_, .python_{
+  font-size: 24px;
+  margin: 10px;
+  display: inline-block;
 }
 
 .about_ {
-  color: white;
   font-size: 24px;
-  top: 520px;
-  left: 20px;
-  position: absolute;
+  margin-top: 10px;
 }
 
-.certification {
-  color: white;
-  font-size: 42px;
-  top: 320px;
-  position: absolute;
-}
-
-.contact {
-  color: white;
-}
-
-p {
-  color: white;
-}
+/* Botão */
 .button {
   background-color: green;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   padding: 10px 15px;
-  right: 10px;
-  top: 1100px;
-  position: absolute;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  bottom: 20px; /* Distância do botão da borda inferior da janela */
+  margin: 60px; /* Remove a margem para garantir que o botão esteja exatamente onde você deseja */
 }
 
 .button__label {
+  
   font-size: 14px;
-  line-height: 10px;
   color: white;
   font-weight: 700;
 }
 
-.end {
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+
+/* Rodapé */
+footer {
+  text-align: 0;
+  padding: 10px;
+  background-color: #222; /* Cor de fundo para o footer */
   color: white;
   font-size: 12px;
+  z-index: 1000;
+  
 }
+
+.footer_icons {
+  display: flex;
+  justify-content: right; /* Centraliza os ícones horizontalmente */
+  gap: 20px; /* Espaço entre os ícones */
+}
+
+/* Estilos para os ícones */
+.footer_icons img {
+  width: 30px; /* Tamanho dos ícones */
+  height: auto; /* Mantém a proporção da imagem */
+  vertical-align: middle; /* Alinha os ícones verticalmente */
+}
+
