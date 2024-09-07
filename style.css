@@ -179,42 +179,41 @@ footer {
 
 .certification-images {
   display: flex;
-  flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte */
-  justify-content: center; /* Centraliza as imagens horizontalmente */
-  gap: 20px; /* Espaço entre as imagens */
-  padding: 20px; /* Adiciona padding ao redor das imagens */
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px;
 }
 
-/* Estilo para as imagens de certificação */
+
 .certification-images img {
-  width: 200px; /* Largura fixa para todas as imagens */
-  height: 230px; /* Altura fixa para todas as imagens */
-  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
-  border: 2px solid #fff; /* Adiciona uma borda branca para destaque (opcional) */
-  border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
+  width: 200px; 
+  height: 230px;
+  object-fit: cover; 
+  border: 2px solid #fff; 
+  border-radius: 8px; 
 }
 
-/* Configura o layout das imagens */
+
 .certification-images .certificationone,
 .certification-images .certificationtwo,
 .certification-images .certificationtree,
 .certification-images .certificationfour,
 .certification-images .certificationfive {
-  flex: 1 1 calc(50% - 20px); /* Duas imagens por linha */
-  /* Subtrai o gap para que as imagens se ajustem corretamente */
+  flex: 1 1 calc(50% - 20px); 
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
   .certification-images img {
-      width: 100%; /* Ajusta a largura das imagens em telas menores */
-      height: auto; /* Mantém a proporção da imagem */
+      width: 100%; 
+      height: auto; 
   }
   .certification-images .certificationone,
   .certification-images .certificationtwo,
   .certification-images .certificationtree,
   .certification-images .certificationfour,
   .certification-images .certificationfive {
-      flex: 1 1 100%; /* Ajusta o layout das imagens para uma coluna em telas menores */
+      flex: 1 1 100%;
   }
 }
