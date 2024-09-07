@@ -21,8 +21,17 @@ header {
 .foto__ {
   width: 200px;
   height: 230px;
-}
+  animation: blink 2s infinite;
+  }
 
+  @keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
 /* Seção de ícones de redes sociais */
 .icon {
   position: absolute; /* Para posicionamento fixo na página */
@@ -95,8 +104,11 @@ main {
   font-size: 14px;
   color: white;
   font-weight: 700;
-  bottom: 20px; /* Distância do botão da borda inferior da janela */
-  margin: 60px; /* Remove a margem para garantir que o botão esteja exatamente onde você deseja */
+  bottom: 20px; 
+  margin: 60px; 
+}
+.button:hover {
+  background-color: blue
 }
 
 .button__label {
@@ -104,6 +116,9 @@ main {
   font-size: 14px;
   color: white;
   font-weight: 700;
+}
+.contact h3 {
+  text-align: center;
 }
 
 label {
@@ -113,31 +128,93 @@ label {
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px; 
+  gap: 15px;
+  width: 100%; /* Ajusta o formulário para ocupar 100% da largura disponível */
+  max-width: 500px; /* Limita a largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário */
 }
 
+/* Adiciona estilo para o textarea */
+textarea {
+  width: 100%;
+  height: 100px; /* Altura personalizada para o textarea */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: white;
+}
 
 /* Rodapé */
 footer {
-  text-align: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
   padding: 10px;
-  background-color: #222; /* Cor de fundo para o footer */
+  background-color: #222;
   color: white;
   font-size: 12px;
   z-index: 1000;
-  
 }
+
+
+.end {
+  margin: 0; 
+}
+
 
 .footer_icons {
   display: flex;
-  justify-content: right; /* Centraliza os ícones horizontalmente */
-  gap: 20px; /* Espaço entre os ícones */
+  gap: 20px; 
 }
 
-/* Estilos para os ícones */
+
 .footer_icons img {
-  width: 30px; /* Tamanho dos ícones */
-  height: auto; /* Mantém a proporção da imagem */
-  vertical-align: middle; /* Alinha os ícones verticalmente */
+  width: 30px; 
+  height: auto; 
+  vertical-align: middle; 
 }
 
+
+.certification-images {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte */
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  gap: 20px; /* Espaço entre as imagens */
+  padding: 20px; /* Adiciona padding ao redor das imagens */
+}
+
+/* Estilo para as imagens de certificação */
+.certification-images img {
+  width: 200px; /* Largura fixa para todas as imagens */
+  height: 230px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  border: 2px solid #fff; /* Adiciona uma borda branca para destaque (opcional) */
+  border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
+}
+
+/* Configura o layout das imagens */
+.certification-images .certificationone,
+.certification-images .certificationtwo,
+.certification-images .certificationtree,
+.certification-images .certificationfour,
+.certification-images .certificationfive {
+  flex: 1 1 calc(50% - 20px); /* Duas imagens por linha */
+  /* Subtrai o gap para que as imagens se ajustem corretamente */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .certification-images img {
+      width: 100%; /* Ajusta a largura das imagens em telas menores */
+      height: auto; /* Mantém a proporção da imagem */
+  }
+  .certification-images .certificationone,
+  .certification-images .certificationtwo,
+  .certification-images .certificationtree,
+  .certification-images .certificationfour,
+  .certification-images .certificationfive {
+      flex: 1 1 100%; /* Ajusta o layout das imagens para uma coluna em telas menores */
+  }
+}
